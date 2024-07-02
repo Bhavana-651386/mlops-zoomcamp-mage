@@ -15,7 +15,7 @@ def load_data(*args, **kwargs):
         Anything (e.g. data frame, dictionary, array, int, str, etc.)
     """
     # Specify your data loading logic here
-    data = pd.read_csv('healthcare-dataset.csv')
+    data = pd.read_csv('mlops/orchestration/healthcare-dataset.csv')
     return data
 
 
