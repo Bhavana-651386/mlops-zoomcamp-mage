@@ -28,9 +28,9 @@ def export_data(data, *args, **kwargs):
 
     with mlflow.start_run():
 
-        with open('logreg.bin', 'wb') as f_out:
+        with open('lr.bin', 'wb') as f_out:
             pickle.dump((logreg), f_out)
-            mlflow.log_artifact('logreg.bin')
+            mlflow.log_artifact('lr.bin')
 
             mlflow.sklearn.log_model(logreg, 'model')
     
